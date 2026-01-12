@@ -7,19 +7,27 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-     <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+<form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
     
         <input type="hidden" name="access_key" value="27fabfbb-19f3-4cd3-a1fe-2b82112e117b">
-         
-                <input type="text" placeholder="Your Name" required><br>
-            
-                <input type="email" placeholder="Your Email" required><br>
+        
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name" required>
     
-                <input type="text" placeholder="Car Model Interested"><br>
-
-                <textarea placeholder="Your Message" required></textarea><br>
-                <button>sumpit</button>
-            </form>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your Email" required>
+    
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Your Password" required>
+    
+        <label for="car">Car Model</label>
+        <input type="text" id="car" placeholder="Car Model" required>
+    
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+    
+        <button type="submit">Submit</button>
+    </form>
 </body>
 
 </html>
